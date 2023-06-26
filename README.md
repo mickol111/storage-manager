@@ -16,3 +16,4 @@ src/main/java/com/model directory contains class files defining classes for vari
 src/main/java/com/util/ClothDAO.java is a DAO class for operations on cloth objects and executing database operations.
 src/main/java/com/util/DBUtil.java is a class for database connection. It defines database operations.
 src/main/java/com/App.java runs the application.
+src/main/resources/com directory contains fxml files, which define views.
