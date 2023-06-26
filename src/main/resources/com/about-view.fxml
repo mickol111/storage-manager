@@ -11,8 +11,7 @@
       
              <Label fx:id="welcomeText" contentDisplay="CENTER" text="Programowanie Obiektowe" textAlignment="CENTER" />
             <Label fx:id="welcomeText1" text="Projekt 01" textAlignment="CENTER" />
-            <Label text="Michał Kolankowski" />
-            <Label text="176294" />
+            <Label text="MK" />
          </children>
          <padding>
             <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
