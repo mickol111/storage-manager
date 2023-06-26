@@ -15,3 +15,4 @@ src/main/java/com/controller directory contains controllers of JavaFX applicatio
 src/main/java/com/model directory contains class files defining classes for various cloth types.
 src/main/java/com/util/ClothDAO.java is a DAO class for operations on cloth objects and executing database operations.
 src/main/java/com/util/DBUtil.java is a class for database connection. It defines database operations.
+src/main/java/com/App.java runs the application.
