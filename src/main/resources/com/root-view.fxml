@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane fx:id="rootBorderPane" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controller.Controller">
+   <top>
+      <VBox alignment="CENTER_RIGHT" BorderPane.alignment="CENTER">
+         <children>
+            <MenuBar prefHeight="36.0" prefWidth="343.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="File">
+                  <items>
+                        <Menu mnemonicParsing="false" text="New">
+                          <items>
+                            <MenuItem mnemonicParsing="false" onAction="#newUnderwear" text="Underwear" />
+                              <MenuItem mnemonicParsing="false" onAction="#newTShirt" text="T-Shirt" />
+                              <MenuItem mnemonicParsing="false" onAction="#newShirt" text="Shirt" />
+                              <MenuItem mnemonicParsing="false" onAction="#newJeans" text="Jeans" />
+                          </items>
+                        </Menu>
+                    <MenuItem mnemonicParsing="false" onAction="#save" text="Save cloth" />
+                        <MenuItem mnemonicParsing="false" onAction="#load" text="Load cloth" />
+                        <MenuItem mnemonicParsing="false" onAction="#clearLoadedCloth" text="Clear loaded cloth" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewLoadedCloth" text="View loaded cloth" />
+                        <MenuItem mnemonicParsing="false" onAction="#close" text="Close" />
+                  </items>
+                </Menu>
+                  <Menu mnemonicParsing="false" text="Database">
+                    <items>
+                      <MenuItem fx:id="addToStorageMenuItem" disable="true" mnemonicParsing="false" onAction="#addToStorage" onMenuValidation="#menuValidate" text="Add to storage" />
+                        <MenuItem mnemonicParsing="false" onAction="#addExampleData" text="Add example date" />
+                        <MenuItem mnemonicParsing="false" onAction="#viewStorage" onMenuValidation="#menuValidate" text="Storage" />
+                    </items>
+                  </Menu>
+                <Menu mnemonicParsing="false" text="Help">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#helpAbout" text="About" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
+            <Label fx:id="loadedModelId" alignment="CENTER" contentDisplay="RIGHT" text="No model loaded" textAlignment="RIGHT">
+               <VBox.margin>
+                  <Insets right="12.0" top="6.0" />
+               </VBox.margin>
+            </Label>
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <TextArea fx:id="logTextArea" prefHeight="56.0" prefWidth="526.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="12.0" left="12.0" right="12.0" top="12.0" />
+         </BorderPane.margin>
+      </TextArea>
+   </bottom>
+</BorderPane>
